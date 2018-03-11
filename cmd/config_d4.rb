@@ -1,7 +1,7 @@
 require 'compass/import-once/activate'
 
 # 網域(domain)後面的目錄
-http_path = "/oaf2e"
+http_path = "/myblog"
 
 
 # 字體目錄與網址下的字體目錄
@@ -37,4 +37,3 @@ line_comments = false
 
 # images_dir = "images"
 # javascripts_dir = "javascripts"
-
