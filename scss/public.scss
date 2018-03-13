@@ -39,3 +39,10 @@ html {
     @include font-smoothing(antialiased);
   }
 }
+
+#title {
+  background-color: rgb(49, 70, 89);
+  @include range-width(600px) {
+    background-color: rgb(54, 66, 44);
+  }
+}
