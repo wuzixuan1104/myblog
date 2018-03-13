@@ -37,4 +37,3 @@ line_comments = false
 
 # images_dir = "images"
 # javascripts_dir = "javascripts"
-
