@@ -6,5 +6,9 @@
  */
  
 $(function () {
-
+  $(window).scroll (function () {
+    $('#bg').css ({
+      top: 0 - $(window).scrollTop () / 2 + 'px'
+    });
+  });
 });
