@@ -1,54 +1,49 @@
 /*
-Error: Invalid CSS after "$minHeight: 2798px": expected "{", was ";"
-        on line 50 of /Users/wu-tzu-hsuan/www/myblog/cmd/../scss/public.scss
+Error: Invalid CSS after "...f08687599cbce1c": expected "{", was "}"
+        on line 396 of /Users/wu-tzu-hsuan/www/myblog/cmd/../scss/public.scss
 
-45:   background-color: rgb(49, 70, 89);
-46:   @include range-width(600px) {
-47:     background-color: rgb(54, 66, 44);
-48:   }
-49: =======
-50: $minHeight: 2798px;
-51: $menuWidth: 228px;
-52: $contentLeftWidth: 370px;
-53: 
-54: #site_container {
-55:   position: relative;
+391:          margin-top: -100px;
+392:        }
+393:      }
+394:    }
+395: >>>>>>> 98b55804bca620be026675a4ff08687599cbce1c
+396: }
 
 Backtrace:
-/Users/wu-tzu-hsuan/www/myblog/cmd/../scss/public.scss:50
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/scss/parser.rb:665:in `block'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+/Users/wu-tzu-hsuan/www/myblog/cmd/../scss/public.scss:396
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:665:in `block'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/wu-tzu-hsuan/.rvm/gems/ruby-2.1.3/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"$minHeight: 2798px\": expected \"{\", was \";\"\A         on line 50 of /Users/wu-tzu-hsuan/www/myblog/cmd/../scss/public.scss\A \A 45:   background-color: rgb(49, 70, 89);\A 46:   @include range-width(600px) {\A 47:     background-color: rgb(54, 66, 44);\A 48:   }\A 49: =======\A 50: $minHeight: 2798px;\A 51: $menuWidth: 228px;\A 52: $contentLeftWidth: 370px;\A 53: \A 54: #site_container {\A 55:   position: relative;"; }
+  content: "Error: Invalid CSS after \"...f08687599cbce1c\": expected \"{\", was \"}\"\A         on line 396 of /Users/wu-tzu-hsuan/www/myblog/cmd/../scss/public.scss\A \A 391:          margin-top: -100px;\A 392:        }\A 393:      }\A 394:    }\A 395: >>>>>>> 98b55804bca620be026675a4ff08687599cbce1c\A 396: }"; }

@@ -39,14 +39,7 @@ html {
     @include font-smoothing(antialiased);
   }
 }
-<<<<<<< HEAD
 
-#title {
-  background-color: rgb(49, 70, 89);
-  @include range-width(600px) {
-    background-color: rgb(54, 66, 44);
-  }
-=======
 $minHeight: 2798px;
 $menuWidth: 228px;
 $contentLeftWidth: 370px;
@@ -102,7 +95,7 @@ $contentLeftWidth: 370px;
           padding-left: 16px;
           padding-right: 16px;
           width: calc( 100% - #{$menuWidth} - 40px - 16px );
-          
+
           li {
             float: left;
             list-style-type: none;
@@ -159,7 +152,7 @@ $contentLeftWidth: 370px;
             position: absolute;
             top: calc(50% - 150px / 2);
             left: calc(50% - 240px / 2);
-            
+
             display: inline-block;
             width: 240px;
             height: 150px;
@@ -179,7 +172,7 @@ $contentLeftWidth: 370px;
             text-align: center;
             text-decoration: none;
             font-size: 17px;
-            
+
             top: calc(50% - 150px / 2 + 150px + 32px);
             left: calc(50% - 240px / 2);
           }
@@ -238,7 +231,7 @@ $contentLeftWidth: 370px;
         height: 447px;
         background-color: rgba(185, 183, 179, 0.21);
         @include clearfix();
-         
+
 
         > * {
           float: left;
