@@ -47,6 +47,8 @@ $containerWidth: 980px;
   width: 100%;
   background-color: white;
   text-align: center;
+  z-index: 3;
+
 
   .center {
     display: inline-block;
@@ -282,10 +284,17 @@ $containerWidth: 980px;
 
 #fg {
   position: fixed;
+  bottom: 0;
+  left: 0;
+
   display: inline-block;
   width: 100%;
-  bottom: 0;
+  height: 100%;
+
   z-index: 1;
+  > img {
+    width: 100%;
+  }
 }
 
 #bg {
@@ -295,4 +304,9 @@ $containerWidth: 980px;
   top: 0;
   left: 0;
   display: inline-block;
+  overflow: hidden;
+  z-index: 2;
+  > img {
+    width: 100%;
+  }
 }

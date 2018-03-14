@@ -10,5 +10,11 @@ $(function () {
     $('#bg').css ({
       top: 0 - $(window).scrollTop () / 2 + 'px'
     });
+    
+    console.log ($(window).scrollTop ());
+    if ($(window).scrollTop () > 500)
+      $('#fg').css ({
+        'z-index': 2
+      })
   });
 });
