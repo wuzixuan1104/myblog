@@ -39,110 +39,126 @@ html {
     @include font-smoothing(antialiased);
   }
 }
+
+#box {
+  display: inline-block;
+  width: 600px;
+  // border: 1px solid red;
+  background-color: white;
+  @include clearfix;
+
+  > * {
+    float: left;
+    display: inline-block;
+    // border: 1px solid red;
+    width: calc(100% / 5);
+    height: 100px;
+    // height: 100%;
+    border: 1px solid red;
+
+    .a {
+      background-color: green;
+    }
+
+    // &:last-child {
+    //   border-right: 0;
+    // }
+
+    // &:nth-child(2) {
+    //   background-color: red;
+    //
+    // }
+
+
+      // &:nth-child(3n + 1) {
+      //   background-color: red;
+      // }
+    //
+    // &:nth-child(n + 5) {
+    //   background-color: red;
+    // }
+
+    // &:nth-child(n + 2) {
+    //   background-color: red;
+    // }
+
+    // + * {
+    //   background-color: red;
+    // }
+  }
+}
+
+#selector
+#apple {
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  background-color: white;
+  margin: 32px;
+
+  &:hover {
+    ~ .item {
+      background-color: red;
+    }
+  }
+}
+
+.item {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+
+
+
 #header {
-  position: relative;
-  z-index: 2;
   display: inline-block;
   width: 100%;
+  border: 1px solid red;
+  background-color: white;
   text-align: center;
-  background-color: rgba(255, 255, 255, 1);
 
-  > .content {
-    width: 960px;
+  > div {
+    // width: 800px;
+    width: 100%;
+    max-width: 800px;
+    display: inline-block;
+    border: 1px solid red;
     margin: 0 auto;
-    
-    @include clearfix();
-    
-    > * {
+
+    @include clearfix;
+
+    > span {
       float: left;
       display: inline-block;
-      height: 55px;
-      line-height: 55px;
-      
+      border: 1px solid red;
+      height: 50px;
+    }
+    .c1 {
+      width: 100px;
+    }
+    .c2 {
+      width: calc(100% - 100px - 200px);
+    }
+    .c3 {
+      width: 200px;
+    }
 
-      &:nth-child(1) {
-        width: 120px;
-        background-color: rgba(89, 161, 15, 1.00);
-        font-size: 20px;
-        color: white;
+    @include range-width(0, 800px) {
+      .c1 {
+        // width: 100%;
+        width: calc(100% - 50px);
       }
-      &:nth-child(2) {
-        width: calc(100% - 120px - 50px);
+      .c2 {
+        width: 100%;
+        display: none;
       }
-      &:nth-child(3) {
+      .c3 {
         width: 50px;
-        height: 50px;
-        overflow: hidden;
-        @include border-radius(50%);
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
       }
     }
-  }
-}
-
-#banner {
-  position: relative;
-  z-index: 2;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
-  border: 1px solid rgba(255, 0, 0, .3);
-  
-
-  .content {
-    position: relative;
-    display: inline-block;
-    width: 960px;
-    height: 500px;
-    margin: 0 auto;
-    
-    z-index: 2;
-    text-align: left;
-    border: 1px solid rgba(255, 0, 0, .3);
-
-    > div {
-      display: inline-block;
-
-      border: 1px solid rgba(255, 0, 0, .3);
-      width: 370px;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.75);
-    }
-  }
-  img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: inline-block;
-    width: 100%;
-    z-index: 1;
-  }
-}
-
-.block {
-  position: relative;
-  z-index: 2;
-  display: inline-block;
-  width: 100%;
-  height: 300px;
-  background-color: rgba(255, 255, 255, 1);
-}
-
-#bg {
-  position: fixed;
-  left: 0;
-  top: 0;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-
-  img {
-    width: 100%;
   }
 }
