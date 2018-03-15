@@ -4,11 +4,16 @@
  * @license     http://opensource.org/licenses/MIT  MIT License
  * @link        https://www.ioa.tw/
  */
- 
+
 $(function () {
+  $("#bg").imgLiquid();
+  $("#fg").imgLiquid();
+
   $(window).scroll (function () {
     $('#bg').css ({
       top: 0 - $(window).scrollTop () / 2 + 'px'
     });
   });
+
+  $('.part').last().css( 'border-right', 'none' );
 });
