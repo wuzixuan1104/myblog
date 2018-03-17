@@ -60,9 +60,9 @@ html {
       background-color: green;
     }
 
-    // &:last-child {
-    //   border-right: 0;
-    // }
+    &:last-child {
+      border-right: 0;
+    }
 
     // &:nth-child(2) {
     //   background-color: red;
@@ -88,7 +88,7 @@ html {
   }
 }
 
-#selector
+
 #apple {
   display: inline-block;
   width: 500px;
