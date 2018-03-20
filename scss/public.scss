@@ -88,16 +88,32 @@ $contentWidth: 980px;
     }
   }
 
-  @include range-width(0, 1000px) {
+  @include range-width(320px, 1000px) {
     .center {
-      position: relative;
-      display: inline-block;
       width: 100%;
 
       .logo {
         width: calc( 100% - 100px);
         text-align: center;
         float: left;
+      }
+      .menu {
+        display: none;
+      }
+    }
+  }
+
+  @include range-width(0, 400px) {
+    .center {
+      width: 100%;
+      height: 80px;
+
+      .logo {
+        width: calc( 100% - 120px);
+        text-align: center;
+        float: left;
+        font-size: 35px;
+        line-height: 80px;
       }
       .menu {
         display: none;
@@ -144,13 +160,10 @@ $contentWidth: 980px;
     }
   }
 
-  @include range-width(0, 1000px) {
+  @include range-width(400px, 1000px) {
     .center {
-      position: relative;
-      display: inline-block;
       width: 100%;
       min-width: 374px;
-      height: 600px;
       text-align: center;
       padding: 50px;
 
@@ -170,6 +183,42 @@ $contentWidth: 980px;
         > a {
           display: block;
           margin-left: calc( 50% - (194px/2));
+        }
+      }
+    }
+  }
+
+  @include range-width(0, 400px) {
+    .center {
+      width: 100%;
+      min-width: 300px;
+      height: 500px;
+      text-align: center;
+      padding: 50px;
+
+      .content {
+        padding: 10px;
+        padding-top: 100px;
+        height: 400px;
+        width: 100%;
+        text-align: center;
+
+        > h1 {
+          font-size: 25px;
+          text-align: center;
+          display: inline-block;
+          height: 148px;
+          width: 160px;
+        }
+        > a {
+          display: block;
+          margin-left: calc( 50% - (150px/2));
+          font-size: 18px;
+          line-height: 50px;
+          padding: 0;
+          margin-top: 0;
+          width: 150px;
+          height: 50px;
         }
       }
     }
@@ -313,35 +362,28 @@ $contentWidth: 980px;
       .block1 {
         position: relative;
         display: inline-block;
-        height: calc( 447px + 400px );
-
+        height: auto;
         > * {
           display: inline-block;
           width: 100%;
-          height: 447px;
         }
         .image {
-          float: left;
           img {
-            // width: 100%;
             float: left;
             height: 100%;
+            width: 100%;
           }
         }
         .content {
           width: 100%;
-          height: 400px;
+          height: auto;
         }
       }
       .block2 {
         position: relative;
         display: block;
-        height: calc(148px + 248px);
+        height: auto;
 
-        > * {
-          position: relative;
-          display: block;
-        }
         .blog {
           left: 0;
           display: block;
@@ -353,7 +395,7 @@ $contentWidth: 980px;
           position: relative;
           display: block;
           width: 100%;
-          height: 248px;
+          height: auto;
         }
       }
 
@@ -370,7 +412,7 @@ $contentWidth: 980px;
       .block4 {
         position: relative;
         display: inline-block;
-        height: calc(148px + 248px);
+        height: auto;
 
         .service {
           position: relative;
@@ -383,7 +425,7 @@ $contentWidth: 980px;
           z-index: 3;
           position: relative;
           display: block;
-          height: 248px;
+          height: auto;
           width: 100%;
           left: 0;
         }
@@ -395,9 +437,9 @@ $contentWidth: 980px;
         margin-top: 0;
 
         img {
+          display: inline-block;
           right: 0px;
           width: 100%;
-          heigth: 100%;
         }
       }
     }
@@ -413,6 +455,7 @@ $contentWidth: 980px;
   z-index: 3;
   text-align: center;
   padding-top: 50px;
+  background-color: rgba(244, 237, 243, 0.42);
 
   .part {
     position: relative;
@@ -420,11 +463,12 @@ $contentWidth: 980px;
     width: calc( 980px / 3);
     height: 80px;
     padding: 30px;
-    border-right: 2px solid white;
+    border-right: 2px solid black;
+    color: black;
 
     > a {
       text-decoration: none;
-      color: white;
+      color: black;
     }
 
     &:nth-child(3) {
@@ -456,8 +500,6 @@ $contentWidth: 980px;
       margin-top: 24px;
       text-align: center;
       height: 50px;
-      // border: 1px solid red;
-
     }
   }
 

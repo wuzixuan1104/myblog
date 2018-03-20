@@ -1,0 +1,198 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2015 - 2018, OAF2E
+ * @license     http://opensource.org/licenses/MIT  MIT License
+ * @link        https://www.ioa.tw/
+ */
+
+@import "_oa";
+
+* {
+  &, &:after, &:before {
+    vertical-align: top;
+    @include box-sizing(border-box);
+    @include selection(rgba(150, 200, 255, 1), rgba(255, 255, 255, 1));
+    @include font-smoothing(antialiased);
+  }
+}
+
+html {
+  min-height: 100%;
+
+  body {
+    position: relative;
+
+    display: inline-block;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+
+    color: rgba(90, 90, 90, 1.00);
+    // text-align: center;
+    font-size: medium;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif, "微軟正黑體", "Microsoft JhengHei";
+
+    background: $mainBackgroundColor;
+    background-image: $mainBackgroundImage;
+
+    @include font-smoothing(antialiased);
+  }
+}
+
+$contentWidth: 980px;
+#header {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  z-index: 2;
+
+  .center {
+    display: inline-block;
+    width: $contentWidth;
+    @include clearfix();
+
+    > * {
+      position: relative;
+      display: inline-block;
+      height: 100px;
+      float: left;
+    }
+    .logo {
+      width: 228px;
+      background-color: rgb(5, 175, 52);
+      color: white;
+      font-size: 40px;
+      line-height: 100px;
+      text-align: center;
+    }
+
+    .menu {
+      text-decoration: none;
+      font-size: 25px;
+      padding-top: 50px;
+
+      a {
+        color: black;
+        text-decoration: none;
+        margin-left: 25px;
+      }
+    }
+  }
+}
+
+#blog {
+  position: relative;
+  display: block;
+  z-index: 2;
+  font-size: 60px;
+  color: white;
+  font-style: Italic;
+  text-align: center;
+  height: 158px;
+  line-height: 158px;
+}
+
+
+#guide {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  z-index: 2;
+
+  .center {
+    position: relative;
+    display: inline-block;
+    height: 70px;
+    width: $contentWidth;
+    @include clearfix();
+
+    > * {
+      display: inline-block;
+      float: left;
+      color: rgb(46, 172, 21);
+    }
+    a {
+      padding-top: 40px;
+      margin-left: 30px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button {
+      margin-top: 10px;
+      float: right;
+      width: 150px;
+      height: 34px;
+      font-size: 15px;
+      line-height: 34px;
+      border: 1px solid rgb(46, 172, 21);
+      cursor: pointer;
+    }
+  }
+}
+
+#container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  z-index: 2;
+
+  .center {
+    display: inline-block;
+    width: $contentWidth;
+    border: 1px solid red;
+    padding: 20px;
+
+    > * {
+      display: inline-block;
+      float: left;
+      // height: 400px;
+    }
+    .box {
+      width: 454px;
+      height: 550px;
+      border: 1px solid red;
+      margin-bottom: 30px;
+
+      &:nth-child(2n + 1) {
+        margin-right: 30px;
+        // margin-right: calc( #{$contentWidth} - 20px * 2 - 454px * 2);
+      }
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+
+    .header {
+      width: 378px;
+      height: 38px;
+      border: 1px solid red;
+    }
+
+
+  }
+}
+
+#bg {
+  position: fixed;
+  display: inline-block;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
