@@ -15,4 +15,10 @@ $(function () {
     });
   });
 
+  $('.burger, #over_layout').click (function () {
+    $('#menu').toggleClass ('show');
+    $('#over_layout').toggleClass ('show');
+  });
+
+  
 });
