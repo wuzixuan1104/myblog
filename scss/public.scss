@@ -45,7 +45,7 @@ $contentWidth: 980px;
   position: relative;
   display: inline-block;
   width: 100%;
-  min-width: 374px;
+  min-width: 320spx;
   z-index: 3;
   text-align: center;
   background-color: white;
@@ -103,7 +103,7 @@ $contentWidth: 980px;
     }
   }
 
-  @include range-width(0, 400px) {
+  @include range-width(0, 320px) {
     .center {
       width: 100%;
       height: 80px;
