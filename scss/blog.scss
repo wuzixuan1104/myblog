@@ -81,6 +81,40 @@ $contentWidth: 980px;
       }
     }
   }
+
+  @include range-width(320px, 1000px) {
+    .center {
+      width: 100%;
+
+      .logo {
+        width: calc( 100% - 100px);
+        text-align: center;
+        float: left;
+      }
+      .menu {
+        display: none;
+      }
+    }
+  }
+
+  @include range-width(0, 320px) {
+    .center {
+      width: 100%;
+      height: 80px;
+
+      .logo {
+        width: calc( 100% - 120px);
+        text-align: center;
+        float: left;
+        font-size: 35px;
+        line-height: 80px;
+        height: 100%;
+      }
+      .menu {
+        display: none;
+      }
+    }
+  }
 }
 
 #blog {
@@ -140,6 +174,54 @@ $contentWidth: 980px;
       cursor: pointer;
     }
   }
+  .mobile {
+    display: none;
+  }
+
+  @include range-width(0, 1000px) {
+    .center {
+      display: none;
+    }
+
+    .mobile {
+      display: inline-block;
+    }
+    .banner {
+      display: inline-block;
+      width: 100%;
+      height: 50px;
+      background-color: rgb(14, 166, 34);
+      color: white;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 15px;
+      line-height: 50px;
+
+      span:nth-child(1) {
+        float: left;
+      }
+      span:nth-child(2) {
+        float: right;
+      }
+    }
+
+    .select {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      height: 50px;
+      padding-left: 20px;
+
+      select {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        border-radius: 0;
+      }
+    }
+  }
 }
 
 #container {
@@ -155,28 +237,22 @@ $contentWidth: 980px;
     width: $contentWidth;
     padding: 20px;
 
+    @include column-count(2);
+    @include column-gap(25px);
+    @include column-width(454px);
+
     > * {
       display: inline-block;
       float: left;
     }
     .box {
-      width: 454px;
       height: auto;
       margin-bottom: 30px;
-
-      &:nth-child(2n + 1) {
-        margin-right: 30px;
-        // margin-right: calc( #{$contentWidth} - 20px * 2 - 454px * 2);
-      }
-
-      &:last-child {
-        margin-bottom: 0px;
-      }
 
       .content {
         display: inline-block;
         width: 454px;
-        height: 248px;
+        height: auto;
         background-color: rgba(97, 95, 98, 0.1);
         padding: 24px 29px 24px 29px;
 
@@ -227,6 +303,7 @@ $contentWidth: 980px;
           line-height: 20px;
           padding-bottom: 23px;
           border-bottom: 1px solid rgba(171, 167, 170, .5);
+          text-align: left;
         }
 
         .footer {
