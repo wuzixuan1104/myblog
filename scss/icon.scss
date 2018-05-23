@@ -6,6 +6,20 @@
   @include font-smoothing(antialiased);
 }
 
+<<<<<<< HEAD
 .icon-1:before {
   content: "\e901";
+=======
+.icon-close:before {
+  content: "\e903";
+}
+.icon-arrow_drop_down:before {
+  content: "\e901";
+}
+.icon-menu:before {
+  content: "\e902";
+}
+.icon-search:before {
+  content: "\e900";
+>>>>>>> 4fd9641fecdfb32857e51076f92ae23740e4d940
 }

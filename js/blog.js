@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * @author      OA Wu <comdan66@gmail.com>
  * @copyright   Copyright (c) 2015 - 2018, OAF2E
@@ -20,4 +21,8 @@ $(function () {
   // });
 
 
+=======
+$(function () {
+  // $("#bg").imgLiquid();
+>>>>>>> 4fd9641fecdfb32857e51076f92ae23740e4d940
 });

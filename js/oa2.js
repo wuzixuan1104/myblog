@@ -10,4 +10,14 @@ $(function () {
     $('#menu').toggleClass ('show');
   });
 
+  //
+  // $('.oa .tabs > a').click (function () {
+  //   $('.oa').attr ('data-i', $(this).index () + 1);
+  // }).first ().click ();
+
+  // $('.oa .tabs > a').click (function () {
+  //   $(this).addClass ('active').siblings ().removeClass ('active');
+  //
+  //   $('.oa .panels > *').eq ($(this).index ()).addClass ('active').siblings ().removeClass ('active');
+  // }).first ().click ();
 });

@@ -104,11 +104,18 @@ $contentWidth: 980px;
 
       .logo {
         width: calc( 100% - 120px);
+<<<<<<< HEAD
         height: 100%;
+=======
+>>>>>>> 4fd9641fecdfb32857e51076f92ae23740e4d940
         text-align: center;
         float: left;
         font-size: 35px;
         line-height: 80px;
+<<<<<<< HEAD
+=======
+        height: 100%;
+>>>>>>> 4fd9641fecdfb32857e51076f92ae23740e4d940
       }
       .menu {
         display: none;
@@ -180,6 +187,7 @@ $contentWidth: 980px;
       cursor: pointer;
     }
   }
+<<<<<<< HEAD
   #select {
     display: none;
   }
@@ -188,10 +196,18 @@ $contentWidth: 980px;
     padding:0 10px 0 10px;
     @include box-shadow(0 0 10px rgba(0, 0, 0, .5));
 
+=======
+  .mobile {
+    display: none;
+  }
+
+  @include range-width(0, 1000px) {
+>>>>>>> 4fd9641fecdfb32857e51076f92ae23740e4d940
     .center {
       display: none;
     }
 
+<<<<<<< HEAD
     #select {
       position: relative;
       display: inline-block;
@@ -274,6 +290,47 @@ $contentWidth: 980px;
     display: inline-block;
   }
 
+=======
+    .mobile {
+      display: inline-block;
+    }
+    .banner {
+      display: inline-block;
+      width: 100%;
+      height: 50px;
+      background-color: rgb(14, 166, 34);
+      color: white;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 15px;
+      line-height: 50px;
+
+      span:nth-child(1) {
+        float: left;
+      }
+      span:nth-child(2) {
+        float: right;
+      }
+    }
+
+    .select {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      height: 50px;
+      padding-left: 20px;
+
+      select {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        border-radius: 0;
+      }
+    }
+  }
+>>>>>>> 4fd9641fecdfb32857e51076f92ae23740e4d940
 }
 
 #container {
@@ -291,16 +348,20 @@ $contentWidth: 980px;
     @include column-count(2);
     @include column-gap(calc( #{$contentWidth} - 20px * 2 - 454px * 2));
 
+    @include column-count(2);
+    @include column-gap(25px);
+    @include column-width(454px);
+
     > * {
       display: inline-block;
       float: left;
     }
     .box {
-      width: 454px;
       height: auto;
       margin-bottom: 30px;
       break-inside: avoid;
 
+<<<<<<< HEAD
       &:nth-child(2n + 1) {
         margin-right: calc( #{$contentWidth} - 20px * 2 - 454px * 2);
       }
@@ -314,6 +375,13 @@ $contentWidth: 980px;
         width: 454px;
         height: 248px;
         background-color: rgb(241, 232, 232);
+=======
+      .content {
+        display: inline-block;
+        width: 454px;
+        height: auto;
+        background-color: rgba(97, 95, 98, 0.1);
+>>>>>>> 4fd9641fecdfb32857e51076f92ae23740e4d940
         padding: 24px 29px 24px 29px;
 
         > * {

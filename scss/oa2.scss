@@ -111,6 +111,7 @@ html {
 
 
 
+<<<<<<< HEAD
 #select {
   display: inline-block;
   width: 120px;
@@ -150,4 +151,102 @@ html {
 
     text-align: center;
   }
+=======
+#box {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  border: 1px solid red;
+  background-color: white;
+  margin: 0 auto;
+
+    &:before {
+      content: attr(id);
+    }
+    &:after {
+      content: '元';
+    }
+}
+
+
+.oa {
+  display: inline-block;
+  width: 500px;
+  border: 1px solid red;
+
+  .tabs {
+    display: inline-block;
+    width: 100%;
+    @include clearfix;
+
+    > * {
+      display: inline-block;
+      border: 1px solid red;
+      padding: 0 8px;
+      float: left;
+      // &.active{
+      //   background-color: pink;
+      // }
+    }
+  }
+  .panels {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid green;
+
+    > * {
+      display: none;
+      // &.active{
+      //   display: inline-block;
+      // }
+    }
+  }
+
+  #t1:checked {
+    ~ .tabs > *:nth-child(1){
+      background-color: pink;
+    }
+    ~ #t2:checked {
+      ~ .tabs > *:nth-child(1){
+        background-color: white;
+      }
+
+      ~ .tabs > *:nth-child(2){
+        background-color: pink;
+      }
+    }
+  }
+
+  #t2:checked {
+    ~ .tabs > *:nth-child(2){
+      background-color: pink;
+    }
+  }
+
+  #t3:checked {
+    ~ .tabs > *:nth-child(3){
+      background-color: pink;
+    }
+  }
+
+  // $c: 10;
+  // @for $i from 1 through $c {
+  //   &[data-i='#{$i}'] {
+  //     .tabs {
+  //       > * {
+  //         &:nth-child(#{$i}) {
+  //           background-color: pink;
+  //         }
+  //       }
+  //     }
+  //     .panels {
+  //       > * {
+  //         &:nth-child(#{$i}) {
+  //           display: inline-block;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+>>>>>>> 4fd9641fecdfb32857e51076f92ae23740e4d940
 }
